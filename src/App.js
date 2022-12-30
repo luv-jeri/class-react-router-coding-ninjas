@@ -2,6 +2,7 @@ import Hero from './pages/app/hero/Hero';
 import Nav from './components/nav';
 import SignIn from './pages/auth/signin/SignIn';
 import Courses from './pages/app/courses/Courses';
+import Learn from './pages/app/learn/Learn';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import ProtectedRoute from './components/protected/ProtectedRoute';
@@ -17,6 +18,14 @@ function App() {
           element={
             <ProtectedRoute>
               <Courses />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path='/learn/:id'
+          element={
+            <ProtectedRoute>
+              <Learn />
             </ProtectedRoute>
           }
         />

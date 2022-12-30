@@ -2,7 +2,7 @@ import React from 'react';
 import style from './Courses.module.css';
 import Card from '../../../components/card';
 import coursesData from '../../../data/courses.json';
-
+ 
 function Courses() {
   return (
     <div className={style.courses_container}>

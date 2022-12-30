@@ -19,7 +19,7 @@ const useAuth = () => {
 
 const UserContextProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -43,7 +43,8 @@ const UserContextProvider = ({ children }) => {
 
   const login = async (email, password) => {
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      const test = await signInWithEmailAndPassword(auth, email, password);
+      console.log(test.user.uid);
     } catch (error) {
       setError(error.message);
       console.log(error);
@@ -52,7 +53,8 @@ const UserContextProvider = ({ children }) => {
 
   const register = async (email, password) => {
     try {
-      await createUserWithEmailAndPassword(auth, email, password);
+      const test = await createUserWithEmailAndPassword(auth, email, password);
+      console.log(test);
     } catch (error) {
       console.log(error);
     }
