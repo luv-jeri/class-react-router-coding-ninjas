@@ -1,0 +1,26 @@
+[
+    {
+        "id": "id-8827gdf0c",
+        "title": "React",
+        "description": "React is a JavaScript library for building user interfaces.",
+        "img": "https://cdn-icons-png.flaticon.com/512/3334/3334886.png"
+    },
+    {
+        "id": "id-akkvbh735",
+        "title": "Node",
+        "description": "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment .",
+        "img": "https://cdn-icons-png.flaticon.com/512/5968/5968322.png"
+    },
+    {
+        "id": "id-345knvkhj",
+        "title": "Azur",
+        "description": "Azure is a cloud computing service created by Microsoft.",
+        "img": "https://cdn-icons-png.flaticon.com/512/873/873107.png"
+    },
+    {
+        "id": "id-sdffi89nf",
+        "title": "SQL",
+        "description": "SQL is a standard language for storing, manipulating and retrieving data in databases.",
+        "img": "https://cdn-icons-png.flaticon.com/512/8452/8452873.png"
+    }
+]

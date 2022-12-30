@@ -1,0 +1,49 @@
+.heading {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--clr-text-main);
+    margin-block: 1rem;
+}
+
+.heading h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    margin-block: 1rem;
+}
+
+.heading h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--clr-accent);
+    margin-block: 1rem;
+    text-decoration: underline dashed var(--clr-accent);
+}
+
+.courses_container {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    padding-block: 1rem;
+    background-color: var(--clr-bg);
+}
+
+.card_container {
+    margin-right: 1rem;
+    margin-block: 1rem;
+}
+
+.courses {
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.courses::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
