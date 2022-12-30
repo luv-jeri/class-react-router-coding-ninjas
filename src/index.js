@@ -5,15 +5,21 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { CartProvider } from './context/Cart.context';
 import { ThemeProvider } from './context/Theme.context';
+import { UserContextProvider } from './context/UserContext';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ThemeProvider>
-      <CartProvider>
-        <App />
-      </CartProvider>
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider>
+        <UserContextProvider>
+          <CartProvider>
+            <App />
+          </CartProvider>
+        </UserContextProvider>
+      </ThemeProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

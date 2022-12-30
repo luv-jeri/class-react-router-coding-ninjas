@@ -1,7 +1,7 @@
 import React from 'react';
-import style from './style.module.css';
-import Card from '../../components/card';
-import coursesData from '../../data/courses.json';
+import style from './Courses.module.css';
+import Card from '../../../components/card';
+import coursesData from '../../../data/courses.json';
 
 function Courses() {
   return (
