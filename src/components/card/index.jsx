@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Card({ title, img, id }) {
   return (
     <Link
-      to={`/learn/${id}`}
+      to={`/courses/${id}`}
       className={style.card_container}
       onClick={() => {}}
       style={{ cursor: 'pointer' }}
