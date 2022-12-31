@@ -1,13 +1,12 @@
 import React from 'react';
-import style from './style.module.css';
-import useCart from '../../context/Cart.context';
+import style from './Nav.module.css';
+
 import useTheme from '../../context/Theme.context';
 import { useAuth } from '../../context/UserContext';
 
 import { useNavigate } from 'react-router-dom';
 
 function Nav() {
-  const { cart } = useCart();
   const { toggleTheme, theme } = useTheme();
   const { user, logout } = useAuth();
   const navigate = useNavigate();
